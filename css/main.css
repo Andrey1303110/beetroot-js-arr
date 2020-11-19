@@ -1,0 +1,42 @@
+body {
+    font-size: 20px;
+}
+
+.container {
+    margin: 15px auto;
+    max-width: 1000px;
+}
+
+select, input, button {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.array {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+}
+
+.array div {
+    position: relative;
+}
+
+.array div span {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -15px;
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.out-1-source-image {
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+}
