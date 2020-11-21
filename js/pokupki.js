@@ -1,63 +1,64 @@
 var a, a1, a2, b, b1, b2, c, c1, c2, d, d1, d2, e, e1, e2;
 
 a = prompt('Введите название продукта', '');
-a1 = prompt('Введите цену продукта', '');
+a1 = prompt('Введите цену продукта',);
 a2 = prompt('Введите купленное количество',);
 b = prompt('Введите название продукта', '');
-b1 = prompt('Введите цену продукта', '');
+b1 = prompt('Введите цену продукта',);
 b2 = prompt('Введите купленное количество',);
 c = prompt('Введите название продукта', '');
-c1 = prompt('Введите цену продукта', '');
+c1 = prompt('Введите цену продукта',);
 c2 = prompt('Введите купленное количество',);
 d = prompt('Введите название продукта', '');
-d1 = prompt('Введите цену продукта', '');
+d1 = prompt('Введите цену продукта',);
 d2 = prompt('Введите купленное количество',);
 e = prompt('Введите название продукта', '');
-e1 = prompt('Введите цену продукта', '');
+e1 = prompt('Введите цену продукта',);
 e2 = prompt('Введите купленное количество',);
 
 let arr = [
     {
         subject: a,
-        rating: a1,
-        number: a2
+        price: a1,
+        numbers: a2
     },
     {
         subject: b,
-        rating: b1,
-        number: b2
+        price: b1,
+        numbers: b2
     },
     {
         subject: c,
-        rating: c1,
-        number: c2
+        price: c1,
+        numbers: c2
     },
     {
         subject: d,
-        rating: d1,
-        number: d2
+        price: d1,
+        numbers: d2
     },
     {
         subject: e,
-        rating: e1,
-        number: e2
+        price: e1,
+        numbers: e2
     }
 ];
 
-let number = Number;
-
 let newArr1 = arr.sort((a, b) => {
-    return b.rating - a.rating
-})
+    return b.price - a.price
+});
 
 let newArr2 = arr.sort((a, b) => {
     return b.number - a.number
-})
+});
 
-let sum = (a1 + b1 + c1 + d1 + e1);
-let kolvo = (a2 + b2 + c2 + d2 + e2);
+let sum = (a1 * a2) + (b1 * b2) + (c1 * c2) + (d1 * d2) + (e1 * e2);
+let kolvo = Number(a2) + Number(b2) + Number(c2) + Number(d2) + Number(e2);
+// let kolvo = (((a2) + (b2) + (c2 + d2)) + e2);
+let sredsum = sum / arr.length;
 
 console.log(newArr1);
 console.log(newArr2);
 console.log(sum);
 console.log(kolvo);
+console.log(sredsum);
