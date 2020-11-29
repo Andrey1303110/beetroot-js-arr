@@ -42,8 +42,10 @@ let peopleInd = people.findIndex(function (person) {
 
 console.log(people[peopleInd]);
 
-let peopleName = people.findIndex(function (person) {
-    return person.name == 'Andre';
-})
+let peopleName = people.findIndex(function (person) { return person.name == 'Andre'; })
 
 console.log(people[peopleName]);
+
+let peopleName2 = people.find(person => person.name == 'Andre'); // тоже самое но проще
+
+console.log(peopleName2);
