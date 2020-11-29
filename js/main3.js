@@ -29,8 +29,7 @@ const pow1 = num => {
     return num ** 2
 }
 
-document.write(pow1(num = 5));
+document.write(pow1(num = 5), "<br />");
 
-let setName4 = setName3(firstName = 'sanya ', lastName = 'nesanya');
-
-document.write(setName4());
+const sum = (a, b = 1) => a + b;
+document.write(sum(a = 20))
