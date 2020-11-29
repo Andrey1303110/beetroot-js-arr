@@ -14,6 +14,8 @@ var carsIndex = (cars.indexOf('ford'));
 
 console.log(carsIndex);
 
+console.log(cars.includes('ford'));
+
 var text = 'Я люблю тебя моё Солнышко';
 var revText = text.split('').reverse().join('');
 console.log(revText);
@@ -49,3 +51,5 @@ console.log(people[peopleName]);
 let peopleName2 = people.find(person => person.name == 'Andre'); // тоже самое но проще
 
 console.log(peopleName2);
+
+
