@@ -31,5 +31,5 @@ const pow1 = num => {
 
 document.write(pow1(num = 5), "<br />");
 
-const sum = (a, b = 1) => a + b;
+const sum = (a, b = a * num) => a + b;
 document.write(sum(a = 20))
