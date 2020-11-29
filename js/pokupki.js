@@ -44,18 +44,17 @@ let arr = [
     }
 ];
 
-let newArr1 = arr.sort((a, b) => {
-    return b.price - a.price
+let newArray1 = arr.sort((a, b) => {
+    return arr = [b.price - a.price]
 });
 
-let newArr2 = arr.sort((a, b) => {
-    return b.number - a.number
+let newArray2 = arr.sort((a, b) => {
+    return arr = [b.number - a.number]
 });
 
 let sum = (a1 * a2) + (b1 * b2) + (c1 * c2) + (d1 * d2) + (e1 * e2);
 let kolvo = Number(a2) + Number(b2) + Number(c2) + Number(d2) + Number(e2);
-// let kolvo = (((a2) + (b2) + (c2 + d2)) + e2);
-let sredsum = sum / arr.length;
+let sredsum = sum / kolvo;
 
 console.log(newArr1);
 console.log(newArr2);
@@ -63,6 +62,8 @@ console.log(sum);
 console.log(kolvo);
 console.log(sredsum);
 
-alert(`'Общая сумма покупок' ${(sum)} 'гривен'`);
-alert(`'Общая количество товара', ${(kolvo)}, 'штук'`);
-alert(`'Средняя стоимость 1 товара' , ${(sredsum)}, 'гривен за штуку'`);
+document.write(`'Общая сумма покупок' ${(sum)} 'гривен'<br />`);
+document.write(`'Общая количество товара', ${(kolvo)}, 'штук'<br />`);
+document.write(`'Средняя стоимость 1 товара' , ${(sredsum)}, 'гривен за штуку'<br />`);
+document.write(`'Сортировка товаров по цене' , ${arr}, <br />`);
+document.write(`'Сортировка товаров по количству' , ${arr}, `);
