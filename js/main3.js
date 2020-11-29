@@ -7,7 +7,7 @@ let setName2 = function setName2(firstName, lastName) {
 }
 
 let setName3 = function setName3(firstName, lastName) {
-    document.write("Прощай ", firstName, lastName, "<br />")
+    document.write("Прощай ", firstName, lastName, "<br /><br />")
 }
 
 setName(firstName = 'andrey', lastName = ' pastushenko');
