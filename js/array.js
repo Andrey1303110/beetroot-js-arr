@@ -52,4 +52,22 @@ let peopleName2 = people.find(person => person.name == 'Andre'); // тоже с�
 
 console.log(peopleName2);
 
+var allAge = people.filter(person => person.age > 25).reduce((acc, person) => {
+    acc += person.age
+    return acc
+}, 0) //фильтр с аккумулятор (в которой вклдываются значения)
 
+console.log(allAge);
+
+var chisla = [1, 3, 5, 7, 9, 11, 13];
+
+let chislaPow = num => num ** 2;
+let chisla2 = chisla.map(chislaPow);
+
+console.log(chisla2);
+
+let filteredChisla = chisla2.filter(num => {
+    return num > 25;
+})
+
+console.log(filteredChisla);
