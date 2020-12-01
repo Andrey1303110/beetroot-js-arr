@@ -44,12 +44,12 @@ let arr = [
     }
 ];
 
-let newArray1 = arr.sort((a, b) => {
-    return arr = [b.price - a.price]
+let newArr1 = arr.sort((a, b) => {
+    return newArr1 = [b.price - a.price]
 });
 
-let newArray2 = arr.sort((a, b) => {
-    return arr = [b.number - a.number]
+let newArr2 = arr.sort((a, b) => {
+    return newArr2 = [b.numbers - a.numbers]
 });
 
 let sum = (a1 * a2) + (b1 * b2) + (c1 * c2) + (d1 * d2) + (e1 * e2);
@@ -64,6 +64,6 @@ console.log(sredsum);
 
 document.write(`'Общая сумма покупок' ${(sum)} 'гривен'<br />`);
 document.write(`'Общая количество товара', ${(kolvo)}, 'штук'<br />`);
-document.write(`'Средняя стоимость 1 товара' , ${(sredsum)}, 'гривен за штуку'<br />`);
-document.write(`'Сортировка товаров по цене' , ${arr}, <br />`);
-document.write(`'Сортировка товаров по количству' , ${arr}, `);
+document.write(`'Средняя стоимость 1 товара' , ${(sredsum.toFixed(1))}, 'гривен за штуку'<br />`);
+document.write(`'Сортировка товаров по цене' , ${newArr1}, <br />`);
+document.write(`'Сортировка товаров по количству' , ${newArr2}, `);
